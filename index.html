@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstfelt og tastatur</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="header">Tekstfelt og tastatur :D</h1>
+    <div id="tekstfelt"></div>
+    <div id="bokstaver">
+        <div onclick="type(this)">A</div>
+        <div onclick="type(this)">B</div>
+        <div onclick="type(this)">C</div>
+        <div onclick="type(this)">D</div>
+        <div onclick="type(this)">E</div>
+        <div onclick="type(this)">F</div>
+        <div onclick="type(this)">G</div>
+    </div>
+
+    <script>
+        let tekst = "";
+        function type(element) {
+            let bokstav = element.innerHTML;
+            let tekstfelt = document.getElementById("tekstfelt")
+            tekstfelt.innerHTML += bokstav;
+        }
+    </script>
+</body>
+</html>
